@@ -1,0 +1,526 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #2B2E4A;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    height: 65px;
+    width: 100%;
+    background-color: rgba(234, 243, 245, 0.9);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    border-bottom: 2px solid black;
+}
+
+nav img {
+    float: left;
+    width: 129px;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 20px;
+}
+
+nav li {
+    float: left;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+nav li a {
+    line-height: 63px;
+    padding: 0 25px;
+    display: block;
+    float: left;
+    transition: all 0.5s;
+}
+
+nav span a {
+    float: right;
+    margin-right: 50px;
+    line-height: 63px;
+    padding: 0 25px;
+    display: block;
+    transition: all 0.5s;
+    background-color: #E84545;
+}
+
+nav li a:hover {
+    background-color: #E84545;
+}
+
+nav span a:hover {
+    background-color: red;
+    color: white;
+}
+
+.clear {
+    clear: both;
+}
+
+.content {
+    width: 1280px;
+}
+
+#top, #main {
+    width: 100%;
+    height: 700px;
+}
+
+#top {
+    width: 100%;
+    background-image: url(../image/Frostpunk.jpg);
+    margin-bottom: 300px;
+}
+
+.top-content h2, .top-content p {
+    padding-left: 40px;
+    padding-right: 30px;
+    text-shadow: 0 0 3px black, 0 0 5px black;
+    font-weight: 300;
+}
+
+.top-content h2 {
+    padding-top: 370px;
+    font-size: 40px;
+    margin-top: 0;
+    letter-spacing: 2px;
+}
+
+.top-content span {
+    color: red;
+}
+
+.top-content p {
+    font-size: 19px;
+    line-height: 30px;
+}
+
+.selengkapnya {
+    font-size: 20px;
+    margin-left: 50px;
+    padding: 10px 25px;
+    background-color: #E84545;
+    border-radius: 27px;
+    transition: all 0.5s;
+}
+
+.selengkapnya:hover {
+    background-color: black;
+    color: white;
+}
+
+#main {
+    width: 100%;
+    background-image: url(../image/TW3.jpg);
+    background-size: cover;
+}
+
+.main-review {
+    padding-top: 97px;
+    padding-bottom: 97px
+}
+
+.container {
+    width: 100%;
+}
+
+.games {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.game {
+    margin: 0 20px 60px 20px
+}
+
+figcaption, .game p {
+    text-shadow: 0 0 3px black, 0 0 5px black;
+}
+
+figcaption {
+    font-size: 40px;
+    margin-bottom: 108px;
+}
+
+.game p {
+    font-size: 18px;
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 25px;
+}
+
+.card {
+    box-shadow: 2px 2px 5px black;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #53354A;
+}
+
+.playforum {
+    margin-bottom: 300px;
+    color: white;
+}
+
+.playforum img {
+    padding: 20px 0;
+}
+
+.playforum, .community {
+    background-color: black;
+    padding: 25px 30px;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+}
+
+.playforum h2, .community h2{
+    font-size: 40px;
+    text-shadow: 0 0 3px black, 0 0 5px black;
+    letter-spacing: 2px;
+}
+
+.playforum p, .community p {
+    font-size: 30px;
+    line-height: 45px;
+    text-align: justify;
+    text-justify: inter-word;
+    text-shadow: 0 0 3px black, 0 0 5px black;
+}
+
+.social-media {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media a {
+    padding: 25px;
+    margin-right: 5px;
+    color: #D8D9CF;
+    transition: all 0.3s;
+    border-radius: 10px;
+
+}
+
+#twitter:hover {
+    background-color: #1DA1F2;
+    color: white;
+}
+
+#facebook:hover {
+    background-color: #3b5998;
+    color: white;
+}
+
+#reddit:hover {
+    background-color: #FF4500;
+    color: white;
+}
+
+#whatsapp:hover {
+    background-color: #25D366;
+    color: white;
+}
+
+footer {
+    background-color: white;
+    text-align: center;
+    padding: 3px;
+    margin: 0;
+    color: black;
+}
+
+#about-me {
+    width: 300px;
+    height: auto;
+    box-shadow: 2px 2px 5px black;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: black;
+    text-align: center;}
+
+#about-me img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+/* #web-dev {
+    text-align: center;
+    padding: 11px;
+    background-color: #628E90;
+    border-radius: 20px;
+    margin: 20px 58px;
+} */
+
+#name {
+    font-size: 22px;
+    text-shadow: 1px 1px 3px #FFD700, 0 0 5px black;
+
+}
+
+#about-me p {
+    line-height: 25px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+#linkedin {
+    padding: 25px;
+    margin-right: 5px;
+    color: #D8D9CF;
+    transition: all 0.3s;
+    border-radius: 10px;
+    position: relative;
+}
+
+#linkedin:hover {
+    padding: 20px;
+    background-color: #0072b1;
+    color: white;
+}
+.connect {
+  visibility: hidden;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 0;
+  margin-left: -70px;
+  }
+
+#linkedin:hover .connect {
+    visibility: visible;
+}
+
+
+/* Responsif untuk laptop */
+
+@media screen and (max-width: 1777px) {
+    .game img {
+    width: 70%;
+    height: auto;
+    float: left;
+    margin-right: 30px;
+    }
+}
+
+/* Responsif untuk Tablet */
+
+@media screen and (max-width: 900px) {
+     #top, #main {
+        width: 100%;
+        height: auto;;
+     }
+     #top, #main {
+        background-size: cover;
+     }
+
+     .top-content p {
+        font-size: 15px;
+        line-height: 30px;
+    }
+
+     nav {
+        width: 100%;
+        font-size: medium;
+     }
+
+     nav span a {
+        margin: 0;
+     }
+
+     nav img {
+        margin-right: 20px;
+        margin-left: 50px;
+     }
+
+     .game img {
+        width: 100%;
+        height: auto;
+        float: none;
+        margin-right: 30px;
+        }
+
+     figcaption {
+        margin: 0 30px;
+     }
+
+     br {
+        display: none;
+     }
+}
+
+/* Responsif untuk smartphone */
+
+@media screen and (max-width: 500px) {
+    #top, #main {
+       width: 100%;
+       height: auto;
+    }
+    #top, #main {
+       background-size: cover;
+    }
+
+    .top-content p {
+        font-size: 15px;
+        line-height: 30px;
+    }
+
+    nav {
+       width: 100%;
+       font-size: small;
+       position: sticky;
+    }
+
+    nav span a {
+        padding: 0;
+    }
+
+    .playforum p, .community p {
+        font-size: 20px;
+    }
+    
+    nav li a {
+        padding: 0 5px;
+    }
+
+    nav img {
+        margin-top: 25px;
+        margin-right: 10px;
+        margin-left: 10px;
+        width: 17%;
+    }
+
+    .game img {
+        width: 100%;
+        float: none;
+        margin-right: 0px;
+        }
+
+    figcaption {
+       margin: 0 10px;
+       font-size: 20px;
+    }
+
+    br {
+        display: none;
+    }
+
+    .top-content h2 {
+        font-size: 20px;
+        padding-left: 20px;
+
+    }
+
+    .top-content p {
+        padding: 12px;
+        text-align: justify;
+    }
+    
+}
+
+/* 
+    Penggunaan JavaScript untuk memindahkan menu navbar ke satu menu saja agar layout lebih responsif di smartphone
+*/
+
+.select {
+    display: none;
+}
+
+@media screen and (min-width: 320px) and (max-width: 765px) {
+    .select {
+        width: 137px;
+        background: #2a2f3b;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 2px solid #2a2f3b;
+        padding: 21px;
+        cursor: pointer;
+        transition: 0.3s;
+        font-size: 14px;
+    }
+
+    .select-clicked {
+        border: 2px solid #26489a;
+        box-shadow: 0 0 0.8em #26489a;
+    }
+
+    .select:hover {
+        background: #323741;
+    }
+
+    .sign {
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 6px solid #fff;
+        transition: 0.3s;
+    }
+
+    .menu {
+        list-style: none;
+        background: #323741;
+        border: 1px #364a43 solid;
+        padding: 3px 8px;
+        box-shadow: 0 0 8px 16px rgba(0, 0, 0, 0.2);
+        border-radius: 0.5em;
+        color: #9fa5b5;
+        position: absolute;
+        left: 50%;
+        width: 100%;
+        transform: translateX(-50%);
+        opacity: 0;
+        display: none;
+        transition: 0.2s;
+        z-index: 1;
+    }
+
+    .active {
+        background: #23242a;
+    }
+
+    .menu-open {
+        display: block;
+        opacity: 1;
+    }
+
+    a {
+        color: white;
+    }
+}
+
+
+/*
+    Akhirnya beres. Pertama kali bikin laman tampilan website,
+    pertama kalinya juga bikin pake HTML, CSS, JavaScript 
+*/
