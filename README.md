@@ -1,4 +1,4 @@
-My project. Landing page for a game forum.
+My project. Responsive landing page for a game forum.
 
 
-Page: https://helvizar.github.io/play-forum-landing-page/
+URL: https://helvizar.github.io/play-forum-landing-page/
